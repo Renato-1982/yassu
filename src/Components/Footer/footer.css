@@ -1,0 +1,17 @@
+div#rodape {
+    clear: both;
+}
+div#rodape p {
+    font-size: 10pt;
+    color: #606060;
+    text-align: center;
+    padding: 5px 0px 5px 10px;
+}
+div#rodape a {
+    font-family: "Poppins", serif;
+    font-size: 10pt;
+    color: #000080;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}

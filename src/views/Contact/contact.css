@@ -1,0 +1,30 @@
+*{
+    font-family: "Poppins", serif;
+}
+div#titulo {    
+    text-align: center;
+}
+div#titulo h1 {
+    font-size: 20pt;
+    color: #000000;
+}
+div#contact {    
+    display: block;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+div#contact h2 {
+    font-size: 13pt;
+    color: #000000;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+}
+div#contact h3 {
+    font-size: 13pt;
+    color: #000000;
+}
+div#contact p {
+    font-size: 12pt;
+    color: #000000;
+}
