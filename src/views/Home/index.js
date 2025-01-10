@@ -19,7 +19,7 @@ import "../Home/home.css";
 
 function Home() {
     return (
-        <div>
+        <div className="corpo">
             <Navbar />
             <Swiper className="slides"
                 modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}

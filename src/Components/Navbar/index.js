@@ -1,38 +1,17 @@
 import React, { useState } from "react";
 import Logo from "../Img/yassu_logo.svg";
 import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
+import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
+import PriorityHighOutlinedIcon from '@mui/icons-material/PriorityHighOutlined';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import '../Navbar/navbar.css';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
-    const menuOptions = [
-        {
-            text: "Home",
-            icon: <HomeIcon />,
-        },
-        {
-            text: "Fotos",
-            icon: <InfoIcon />,
-        },
-        {
-            text: "Sobre Nós",
-            icon: <InfoIcon />,
-        },
-        {
-            text: "Contato",
-            icon: <PhoneRoundedIcon />,
-        },
-    ];
 
     return (
         <nav>
@@ -44,7 +23,7 @@ const Navbar = () => {
                 <a href="/">Home</a>
                 <a href="/photos">Fotos</a>
                 <a href="/sobre">Sobre Nós</a>
-                <a href="/Contact">Contato</a>
+                <a href="/contact">Contato</a>
             </div>
 
             <div className="nav-bar-menu-container">
@@ -52,16 +31,13 @@ const Navbar = () => {
             </div>
 
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
-                <Box sx={{ width: 250 }} role="presentation" onClick={() => setOpenMenu(false)} onKeyDown={() => setOpenMenu(false)}>
-                    <List>
-                        {menuOptions.map((item) => (
-                            <ListItem key={item.text} disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>{item.icon}</ListItemIcon>
-                                    <ListItemText primary={item.text} />
-                                </ListItemButton>
-                            </ListItem>
-                        ))}
+                <Box sx={{ width: 200 }} role="presentation" onClick={() => setOpenMenu(false)} onKeyDown={() => setOpenMenu(false)}>
+                    <List className="nav-links-lista">
+                        <div className="nav-menu-icon"><HiOutlineBars3/></div>
+                        <a href="/"><HomeIcon/>Home</a>
+                        <a href="/photos"><ImageOutlinedIcon/>Fotos</a>
+                        <a href="/sobre"><PriorityHighOutlinedIcon/>Sobre Nós</a>
+                        <a href="/contact"><PhoneRoundedIcon/>Contato</a>
                     </List>
                 </Box>
             </Drawer>

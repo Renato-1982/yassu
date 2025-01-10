@@ -1,7 +1,10 @@
 *{
     font-family: "Poppins", serif;
 }
-/*Formatação do título dentro da div*/
+.app{
+    margin-top: 0;
+    width: 100%;
+}
 div#titulo {    
     text-align: center;
 }
@@ -9,6 +12,7 @@ div#titulo h1 {
     font-size: 20pt;
     color: #000000;
 }
+/*Formatação Section lado esquerdo*/
 section#corpo {
     display: block;
     width:700px;
@@ -17,7 +21,6 @@ section#corpo {
     padding-left: 30px;
     padding-right: 20px;
 }
-/* Formatação de um artigo dentro do section */
 article#noticia-left h2 {
     font-size: 13pt;
     color: #606060;
@@ -29,7 +32,7 @@ article#noticia-left p {
     font-size: 12pt;
     color: #000000;
 }
-/*Formatação da section*/
+/*Formatação Aside lado direito*/
 aside#lateral {
     display: block;
     width: 650px;
@@ -39,7 +42,6 @@ aside#lateral {
     padding-right: 30px;
     margin-bottom: 20px;
 }
-/* Formatação de um artigo dentro da aside */
 article#noticia-right h2 {
     font-size: 13pt;
     color: #606060;
@@ -50,4 +52,123 @@ article#noticia-right h2 {
 article#noticia-right p {
     font-size: 12pt;
     color: #000000;
+}
+/*Responsivo Mobile*/
+@media (max-width: 800px) {
+    .app{
+        display: block;
+        margin-top: 0;
+        width: 100%;
+    }
+    div#titulo {    
+        text-align: center;
+    }
+    div#titulo h1 {
+        font-size: 12pt;
+        color: #000000;
+    }
+    /*Formatação Section lado esquerdo*/
+    section#corpo {
+        float: left;  /* Flutuar do lado esquerdo */
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    article#noticia-left h2 {
+        width: 500px;
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    article#noticia-left p {
+        width: 500px;
+        font-size: 10pt;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    /*Formatação Aside lado direito*/
+    aside#lateral {
+        float: right;  /* Flutuar do lado esquerdo */
+        width:500px;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+    }
+    article#noticia-right h2 {
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        align-items: center;
+        justify-content: center;
+    }
+    article#noticia-right p {
+        font-size: 10pt;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 400px) {
+    .app{
+        display: block;
+        margin-top: 0;
+        width: 100%;
+    }
+    div#titulo {    
+        text-align: center;
+    }
+    div#titulo h1 {
+        font-size: 10pt;
+        color: #000000;
+    }
+    /*Formatação Section lado esquerdo*/
+    section#corpo {
+        display: flex;
+        width:450px;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    article#noticia-left h2 {
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    article#noticia-left p {
+        font-size: 10pt;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    /*Formatação Aside lado direito*/
+    aside#lateral {
+        display: flex;
+        width:350px;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+    }
+    article#noticia-right h2 {
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        align-items: center;
+        justify-content: center;
+    }
+    article#noticia-right p {
+        font-size: 10pt;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
+    }
 }

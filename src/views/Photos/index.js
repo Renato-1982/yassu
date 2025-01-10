@@ -7,15 +7,15 @@ function Photos() {
         <div className="app">
             <Navbar/>
 
-            <div id="titulo">
+            <div className="titulo">
                 <h1>Galeria de Fotos</h1>
             </div>
             <br/>
 
-            <section id="corpo-full">
-                <article id="fotos">
+            <section className="corpo-full">
+                <article className="fotos">
                     <h2>Bolos</h2>
-                    <ul id="album-fotos">
+                    <ul className="album-fotos">
                         <li id="foto01"><span>Bolo de Aniversário</span></li>
                         <li id="foto02"><span>Bolo de Aniversário</span></li>
                         <li id="foto03"><span>Bolo de Aniversário</span></li>
@@ -33,7 +33,7 @@ function Photos() {
                         <li id="foto15"><span>Bolo de Aniversário</span></li>
                     </ul>
                     <h2>Tortas</h2>
-                    <ul id="album-fotos">
+                    <ul className="album-fotos">
                         <li id="foto16"><span>Torta Especial Baba de Moça</span></li>
                         <li id="foto17"><span>Torta Especial Baba de Moça</span></li>
                         <li id="foto18"><span>Torta Especial Baba de Moça</span></li>
@@ -46,7 +46,7 @@ function Photos() {
                         <li id="foto25"><span>Torta Floresta Negra</span></li>
                     </ul>
                     <h2>Rocamboles</h2>
-                    <ul id="album-fotos">
+                    <ul className="album-fotos">
                         <li id="foto26"><span>Rocambole</span></li>
                         <li id="foto27"><span>Rocambole</span></li>
                         <li id="foto28"><span>Rocambole</span></li>
