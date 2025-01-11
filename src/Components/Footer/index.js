@@ -3,7 +3,7 @@ import "../Footer/footer.css";
 const Footer = () => {
     return (
         <footer>
-            <div id="rodape">
+            <div className="rodape">
             <p>Copyright &copy; 2025 - Todos os direitos reservados - Padaria Yassu<br/>
                 <a href="https://www.instagram.com/padariayassu/" target="_blank"> Instagram </a> |
                 <a href="http://facebook.com/Padaria-Yassu-408011442653343" target="_blank"> Facebook </a> |

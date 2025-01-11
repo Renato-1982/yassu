@@ -1,60 +1,129 @@
 *{
     font-family: "Poppins", serif;
 }
-.titulo {    
+.corpo{
+    display: block;
+    width: 100%;
     text-align: center;
+    padding: 1px 20px 1px 20px; /*Superior,Direita,Inferior,Esquerda*/
 }
 .titulo h1 {
-    font-size: 20pt;
+    width: 100%;
+    font-size: 15pt;
     color: #000000;
-}
-.contact {    
-    display: block;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 .contact h2 {
+    width: 100%;
     font-size: 13pt;
+    text-align: center;
     color: #000000;
     background-color: #dddddd;
     padding: 5px 0px 5px 10px;
 }
 .contact h3 {
     font-size: 13pt;
+    text-align: center;
     color: #000000;
 }
 .contact p {
     font-size: 12pt;
+    text-align: center;
     color: #000000;
 }
 @media (max-width: 800px){
-    .contact {    
+    .corpo{
         display: block;
+        width: 95%;
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 1px 20px 1px 20px; /*Superior,Direita,Inferior,Esquerda*/
+    }
+    .titulo h1 {
+        width: 100%;
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
     }
     .contact h2 {
         width: 100%;
         font-size: 13pt;
+        text-align: center;
         color: #000000;
         background-color: #dddddd;
-        padding: 5px 0px 5px 5px;
+        padding: 5px 0px 5px 10px;
+    }
+    .contact h3 {
+        font-size: 13pt;
+        text-align: center;
+        color: #000000;
+    }
+    .contact p {
+        font-size: 12pt;
+        text-align: center;
+        color: #000000;
+    }
+}
+@media (max-width: 600px){
+    .corpo{
+        display: block;
+        width: 95%;
+        text-align: center;
+        padding: 1px 20px 1px 20px; /*Superior,Direita,Inferior,Esquerda*/
+    }
+    .titulo h1 {
+        width: 100%;
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
+    }
+    .contact h2 {
+        width: 100%;
+        font-size: 13pt;
+        text-align: center;
+        color: #000000;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 10px;
+    }
+    .contact h3 {
+        font-size: 13pt;
+        text-align: center;
+        color: #000000;
+    }
+    .contact p {
+        font-size: 12pt;
+        text-align: center;
+        color: #000000;
     }
 }
 @media (max-width: 400px){
-    .contact {    
+    .corpo{
         display: block;
+        width: 95%;
         text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 1px 20px 1px 20px; /*Superior,Direita,Inferior,Esquerda*/
+    }
+    .titulo h1 {
+        width: 100%;
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
     }
     .contact h2 {
         width: 100%;
         font-size: 13pt;
+        text-align: center;
         color: #000000;
         background-color: #dddddd;
-        padding: 5px 0px 5px 5px;
+        padding: 5px 0px 5px 10px;
+    }
+    .contact h3 {
+        font-size: 13pt;
+        text-align: center;
+        color: #000000;
+    }
+    .contact p {
+        font-size: 12pt;
+        text-align: center;
+        color: #000000;
     }
 }

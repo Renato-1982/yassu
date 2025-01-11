@@ -1,14 +1,14 @@
-div#rodape {
+.rodape {
     font-family: "Poppins", serif;
     clear: both;
 }
-div#rodape p {
+.rodape p {
     font-size: 10pt;
     color: #606060;
     text-align: center;
     padding: 5px 0px 5px 10px;
 }
-div#rodape a {
+.rodape a {
     font-size: 10pt;
     color: #000080;
     text-align: center;
@@ -17,11 +17,59 @@ div#rodape a {
 }
 /*Responsivo*/
 @media (max-width: 800px){
-    div#rodape p {
+    .rodape {
+    font-family: "Poppins", serif;
+    clear: both;
+    }
+    .rodape p {
         font-size: 10pt;
         color: #606060;
         text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 5px 0px 5px 10px;
+    }
+    .rodape a {
+        font-size: 10pt;
+        color: #000080;
+        text-align: center;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+    }
+}
+@media (max-width: 600px){
+    .rodape {
+    font-family: "Poppins", serif;
+    clear: both;
+    }
+    .rodape p {
+        font-size: 10pt;
+        color: #606060;
+        text-align: center;
+        padding: 5px 0px 5px 10px;
+    }
+    .rodape a {
+        font-size: 10pt;
+        color: #000080;
+        text-align: center;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+    }
+}
+@media (max-width: 400px){
+    .rodape {
+    font-family: "Poppins", serif;
+    clear: both;
+    }
+    .rodape p {
+        font-size: 10pt;
+        color: #606060;
+        text-align: center;
+        padding: 5px 0px 5px 10px;
+    }
+    .rodape a {
+        font-size: 10pt;
+        color: #000080;
+        text-align: center;
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
     }
 }

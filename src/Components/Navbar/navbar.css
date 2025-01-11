@@ -75,3 +75,59 @@ nav {
         display: flex;
     }
 }
+@media (max-width: 600px) {
+    .nav-menu-icon{
+        display:  flex;
+        margin-top: 1rem;
+        position: fixed;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+    .nav-links-lista a{
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-indent: 10px;
+    }
+    .nav-logo-container{
+        max-width: 70px;
+    }
+    .navbar-links-container {
+        display: none;
+    }
+    .nav-bar-menu-container {
+        display: flex;
+    }
+}
+@media (max-width: 400px) {
+    .nav-menu-icon{
+        display:  flex;
+        margin-top: 1rem;
+        position: fixed;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+    .nav-links-lista a{
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-indent: 10px;
+    }
+    .nav-logo-container{
+        max-width: 70px;
+    }
+    .navbar-links-container {
+        display: none;
+    }
+    .nav-bar-menu-container {
+        display: flex;
+    }
+}
