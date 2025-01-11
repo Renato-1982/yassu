@@ -11,9 +11,8 @@ function Photos() {
                 <h1>Galeria de Fotos</h1>
             </div>
             <br/>
-
-            <section className="corpo-full">
-                <article className="fotos">
+            
+                <div className="fotos">
                     <h2>Bolos</h2>
                     <ul className="album-fotos">
                         <li id="foto01"><span>Bolo de Aniversário</span></li>
@@ -53,8 +52,7 @@ function Photos() {
                         <li id="foto29"><span>Rocambole</span></li>
                         <li id="foto30"><span>Rocambole</span></li>
                     </ul>
-                </article>
-            </section>
+                </div>
             <Footer/>
         </div>
     )
