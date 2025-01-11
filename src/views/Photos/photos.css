@@ -1,6 +1,11 @@
 *{
     font-family: "Poppins", serif;
 }
+.corpo{
+    display: block;
+    margin-top: 0;
+    width: 100%;
+}
 .titulo h1{    
     font-size: 20pt;
     color: #000000;
@@ -355,12 +360,11 @@
     background-position: 0px 0px;
     background-size: 200px 200px;
 }
-@media (max-width: 800px){
-    .app{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+@media (max-width: 1200px){
+    .corpo{
+        display: block;
+        margin-top: 0;
+        width: 95%;
     }
     .titulo h1{    
         font-size: 15pt;
@@ -373,31 +377,775 @@
     /*Formatação do section*/
     .corpo-full {    
         display: block;
-        width: 750px;
+        width: 1000px;
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
     }
     /* Formatação do título dentro do section */
     .fotos h2 {
-        width: 650px;
+        width: 950px;
         font-size: 13pt;
         color: #000000;
         background-color: #dddddd;
         padding: 5px 0px 5px 10px;
     }
     .album-fotos {
-        width: 700px;
+        width: 950px;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
-        padding: 50px;
         overflow: hidden;
         list-style: none;
     }
     .album-fotos li {
-        float: left;
-        width: 150px;
-        height: 150px;
-        margin: 10px;
+        display: flex;
+        width: 100%;
+        max-width: 210px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        border: 5px solid #ffffff;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        -webkit-transition: all 0.4s ease-in;
+    }    
+    .album-fotos li span {
+        opacity: 0;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 9pt;
+        line-height: 370px;
+        padding: 5px;
+    }    
+    .album-fotos li:hover {
+        -webkit-transform: scale(1.5);
+    }    
+    .album-fotos li:hover span {
+        opacity: 1;
+    }
+    /*Bolos*/
+    .album-fotos li#foto01 {
+        background: url("../Imagens/Bolos/galeria-b01.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    .album-fotos li#foto01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    .album-fotos li#foto02 {
+        background: url("../Imagens/Bolos/galeria-b02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto02:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto03 {
+        background: url("../Imagens/Bolos/galeria-b03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto03:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto04 {
+        background: url("../Imagens/Bolos/galeria-b04.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto04:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto05 {
+        background: url("../Imagens/Bolos/galeria-b05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto05:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto06 {
+        background: url("../Imagens/Bolos/galeria-b06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto06:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto07 {
+        background: url("../Imagens/Bolos/galeria-b07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto07:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto08 {
+        background: url("../Imagens/Bolos/galeria-b08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto08:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto09 {
+        background: url("../Imagens/Bolos/galeria-b09.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto09:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto10 {
+        background: url("../Imagens/Bolos/galeria-b10.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto10:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto11 {
+        background: url("../Imagens/Bolos/galeria-b11.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto11:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto12 {
+        background: url("../Imagens/Bolos/galeria-b12.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto12:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto13 {
+        background: url("../Imagens/Bolos/galeria-b13.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto13:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto14 {
+        background: url("../Imagens/Bolos/galeria-b14.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto14:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto15 {
+        background: url("../Imagens/Bolos/galeria-b15.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto15:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    /*Tortas*/
+    .album-fotos li#foto16 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto16:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto17 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto17:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto18 {
+        background: url("../Imagens/Tortas/galeria-t03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto18:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto19 {
+        background: url("../Imagens/Tortas/galeria-t04.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto19:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto20 {
+        background: url("../Imagens/Tortas/galeria-t05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto20:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto21 {
+        background: url("../Imagens/Tortas/galeria-t06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto21:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto22 {
+        background: url("../Imagens/Tortas/galeria-t07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto22:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto23 {
+        background: url("../Imagens/Tortas/galeria-t08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto23:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto24 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto24:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto25 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto25:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    /*Rocamboles*/
+    .album-fotos li#foto26 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto26:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto27 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto27:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto28 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto28:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto29 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto29:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto30 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto30:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+}
+@media (max-width: 1000px){
+    .corpo{
+        display: block;
+        margin-top: 0;
+        width: 95%;
+    }
+    .titulo h1{    
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /*Formatação do section*/
+    .corpo-full {    
+        display: block;
+        width: 950px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Formatação do título dentro do section */
+    .fotos h2 {
+        width: 800px;
+        font-size: 13pt;
+        color: #000000;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 10px;
+    }
+    .album-fotos {
+        width: 800px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        list-style: none;
+    }
+    .album-fotos li {
+        display: flex;
+        width: 100%;
+        max-width: 210px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        border: 5px solid #ffffff;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        -webkit-transition: all 0.4s ease-in;
+    }    
+    .album-fotos li span {
+        opacity: 0;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 9pt;
+        line-height: 370px;
+        padding: 5px;
+    }    
+    .album-fotos li:hover {
+        -webkit-transform: scale(1.5);
+    }    
+    .album-fotos li:hover span {
+        opacity: 1;
+    }
+    /*Bolos*/
+    .album-fotos li#foto01 {
+        background: url("../Imagens/Bolos/galeria-b01.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    .album-fotos li#foto01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    .album-fotos li#foto02 {
+        background: url("../Imagens/Bolos/galeria-b02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto02:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto03 {
+        background: url("../Imagens/Bolos/galeria-b03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto03:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto04 {
+        background: url("../Imagens/Bolos/galeria-b04.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto04:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto05 {
+        background: url("../Imagens/Bolos/galeria-b05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto05:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto06 {
+        background: url("../Imagens/Bolos/galeria-b06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto06:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto07 {
+        background: url("../Imagens/Bolos/galeria-b07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto07:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto08 {
+        background: url("../Imagens/Bolos/galeria-b08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto08:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto09 {
+        background: url("../Imagens/Bolos/galeria-b09.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto09:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto10 {
+        background: url("../Imagens/Bolos/galeria-b10.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto10:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto11 {
+        background: url("../Imagens/Bolos/galeria-b11.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto11:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto12 {
+        background: url("../Imagens/Bolos/galeria-b12.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto12:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto13 {
+        background: url("../Imagens/Bolos/galeria-b13.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto13:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto14 {
+        background: url("../Imagens/Bolos/galeria-b14.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto14:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto15 {
+        background: url("../Imagens/Bolos/galeria-b15.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto15:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    /*Tortas*/
+    .album-fotos li#foto16 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto16:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto17 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto17:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto18 {
+        background: url("../Imagens/Tortas/galeria-t03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto18:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto19 {
+        background: url("../Imagens/Tortas/galeria-t04.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto19:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto20 {
+        background: url("../Imagens/Tortas/galeria-t05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto20:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto21 {
+        background: url("../Imagens/Tortas/galeria-t06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto21:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto22 {
+        background: url("../Imagens/Tortas/galeria-t07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto22:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto23 {
+        background: url("../Imagens/Tortas/galeria-t08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto23:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto24 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto24:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto25 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto25:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    /*Rocamboles*/
+    .album-fotos li#foto26 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto26:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto27 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto27:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto28 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto28:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto29 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto29:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto30 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto30:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+}
+@media (max-width: 800px){
+    .corpo{
+        display: block;
+        margin-top: 0;
+        width: 95%;
+    }
+    .titulo h1{    
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /*Formatação do section*/
+    .corpo-full {    
+        display: block;
+        width: 700px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Formatação do título dentro do section */
+    .fotos h2 {
+        width: 630px;
+        font-size: 13pt;
+        color: #000000;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 10px;
+    }
+    .album-fotos {
+        width: 630px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        list-style: none;
+    }
+    .album-fotos li {
+        display: flex;
+        width: 100%;
+        max-width: 170px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
         border: 5px solid #ffffff;
         background-color: #ffffff;
         box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
@@ -723,11 +1471,10 @@
     }
 }
 @media (max-width: 600px){
-    .app{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+    .corpo{
+        display: block;
+        margin-top: 0;
+        width: 95%;
     }
     .titulo h1{   
         font-size: 15pt;
@@ -747,14 +1494,14 @@
     }
     /* Formatação do título dentro do section */
     .fotos h2 {
-        width: 500px;
-        font-size: 13pt;
+        width: 430px;
+        font-size: 15pt;
         color: #000000;
         background-color: #dddddd;
         padding: 5px 0px 5px 10px;
     }
     .album-fotos {
-        width: 550px;
+        width: 430px;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -762,10 +1509,383 @@
         list-style: none;
     }
     .album-fotos li {
-        float: left;
-        width: 150px;
-        height: 150px;
-        margin: 10px;
+        display: flex;
+        width: 100%;
+        max-width: 160px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        border: 5px solid #ffffff;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        -webkit-transition: all 0.4s ease-in;
+    }    
+    .album-fotos li span {
+        opacity: 0;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 9pt;
+        line-height: 370px;
+        padding: 5px;
+    }    
+    .album-fotos li:hover {
+        -webkit-transform: scale(1.5);
+    }    
+    .album-fotos li:hover span {
+        opacity: 1;
+    }
+    /*Bolos*/
+    .album-fotos li#foto01 {
+        background: url("../Imagens/Bolos/galeria-b01.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    .album-fotos li#foto01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    .album-fotos li#foto02 {
+        background: url("../Imagens/Bolos/galeria-b02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto02:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto03 {
+        background: url("../Imagens/Bolos/galeria-b03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto03:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto04 {
+        background: url("../Imagens/Bolos/galeria-b04.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto04:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto05 {
+        background: url("../Imagens/Bolos/galeria-b05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto05:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto06 {
+        background: url("../Imagens/Bolos/galeria-b06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto06:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto07 {
+        background: url("../Imagens/Bolos/galeria-b07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto07:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto08 {
+        background: url("../Imagens/Bolos/galeria-b08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto08:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto09 {
+        background: url("../Imagens/Bolos/galeria-b09.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto09:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto10 {
+        background: url("../Imagens/Bolos/galeria-b10.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto10:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto11 {
+        background: url("../Imagens/Bolos/galeria-b11.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto11:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto12 {
+        background: url("../Imagens/Bolos/galeria-b12.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto12:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto13 {
+        background: url("../Imagens/Bolos/galeria-b13.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto13:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto14 {
+        background: url("../Imagens/Bolos/galeria-b14.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto14:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto15 {
+        background: url("../Imagens/Bolos/galeria-b15.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto15:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    /*Tortas*/
+    .album-fotos li#foto16 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto16:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto17 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto17:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto18 {
+        background: url("../Imagens/Tortas/galeria-t03.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto18:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto19 {
+        background: url("../Imagens/Tortas/galeria-t04.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto19:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto20 {
+        background: url("../Imagens/Tortas/galeria-t05.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto20:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto21 {
+        background: url("../Imagens/Tortas/galeria-t06.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto21:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto22 {
+        background: url("../Imagens/Tortas/galeria-t07.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto22:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto23 {
+        background: url("../Imagens/Tortas/galeria-t08.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto23:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto24 {
+        background: url("../Imagens/Tortas/galeria-t01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto24:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto25 {
+        background: url("../Imagens/Tortas/galeria-t02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto25:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+    /*Rocamboles*/
+    .album-fotos li#foto26 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto26:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto27 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto27:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto28 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto28:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto29 {
+        background: url("../Imagens/Rocamboles/galeria-r02.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto29:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }    
+    .album-fotos li#foto30 {
+        background: url("../Imagens/Rocamboles/galeria-r01.JPG") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }    
+    .album-fotos li#foto30:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+}
+@media (max-width: 400px){
+    .corpo{
+        display: block;
+        margin-top: 0;
+        width: 95%;
+    }
+    .titulo h1{   
+        font-size: 15pt;
+        color: #000000;
+        text-align: center;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /*Formatação do section*/
+    .corpo-full {    
+        display: block;
+        width: 300px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* Formatação do título dentro do section */
+    .fotos h2 {
+        width: 270px;
+        font-size: 13pt;
+        color: #000000;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 10px;
+    }
+    .album-fotos {
+        width: 270px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        list-style: none;
+    }
+    .album-fotos li {
+        display: flex;
+        width: 100%;
+        max-width: 340px;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
         border: 5px solid #ffffff;
         background-color: #ffffff;
         box-shadow: 1px 1px 3px rgba(0,0,0,0.4);

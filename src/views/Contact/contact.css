@@ -1,41 +1,41 @@
 *{
     font-family: "Poppins", serif;
 }
-div#titulo {    
+.titulo {    
     text-align: center;
 }
-div#titulo h1 {
+.titulo h1 {
     font-size: 20pt;
     color: #000000;
 }
-div#contact {    
+.contact {    
     display: block;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
 }
-div#contact h2 {
+.contact h2 {
     font-size: 13pt;
     color: #000000;
     background-color: #dddddd;
     padding: 5px 0px 5px 10px;
 }
-div#contact h3 {
+.contact h3 {
     font-size: 13pt;
     color: #000000;
 }
-div#contact p {
+.contact p {
     font-size: 12pt;
     color: #000000;
 }
 @media (max-width: 800px){
-    div#contact {    
+    .contact {    
         display: block;
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
     }
-    div#contact h2 {
+    .contact h2 {
         width: 100%;
         font-size: 13pt;
         color: #000000;
@@ -44,13 +44,13 @@ div#contact p {
     }
 }
 @media (max-width: 400px){
-    div#contact {    
+    .contact {    
         display: block;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
     }
-    div#contact h2 {
+    .contact h2 {
         width: 100%;
         font-size: 13pt;
         color: #000000;

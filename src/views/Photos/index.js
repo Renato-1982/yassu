@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 
 function Photos() {
     return(
-        <div className="app">
+        <div className="corpo">
             <Navbar/>
 
             <div className="titulo">

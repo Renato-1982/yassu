@@ -4,15 +4,15 @@ import Footer from "../../Components/Footer";
 
 function Contact() {
     return(
-        <div className="app">
+        <div className="corpo">
             <Navbar/>
 
-            <div id="titulo">
+            <div className="titulo">
                 <h1>Contatos</h1>
             </div>
             <br/>
 
-            <div id="contact">
+            <div className="contact">
                 <h2>Entre em contato para sugestões, elogios, dúvidas ou reclamações.</h2>
                 <br/>
                 <p>E-mail: padariayassu@yahoo.com.br 
